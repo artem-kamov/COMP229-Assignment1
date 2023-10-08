@@ -9,22 +9,34 @@
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css"/>
     <style>
-        /* Add background color to the navbar */
+       
         .navbar {
-            background-color: #343a40;
+            background-color: #000000;
+            
         }
 
-        /* Space out the navbar items and remove the bullet points */
         ul.navbar-nav {
             list-style: none;
             display: flex;
-            gap: 20px; /* Adjust the spacing between navbar items */
+            gap: 20px; 
             justify-content: flex-end; /* Align items to the right */
             font-size: 20px;
         }
 
         ul.navbar-nav li {
             /* No need for display: inline-block; or float: right; */
+        }
+        ul.navbar-nav li.nav-item a.nav-link {
+          color: #ffffff;
+          padding-left: 5px;
+        }
+
+        .navbar img {
+          margin-top: 20px;
+        }
+
+        ul.navbar-nav li.nav-item:last-child a.nav-link {
+          margin-right: 50px;
         }
 
         a:link {
@@ -51,9 +63,13 @@
             flex: 1;
         }
         footer {
-            background-color: #343a40;
+            background-color: #000000;
             color: #ffffff;
             padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
         }
         footer .navbar-text {
             margin-bottom: 0;
